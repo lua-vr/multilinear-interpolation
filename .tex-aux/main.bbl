@@ -1,0 +1,220 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{berghInterpolationSpacesIntroduction2003}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0688d4b2440a6400c52586045e6bb425}{%
+           family={Bergh},
+           familyi={B\bibinitperiod},
+           given={Jöran},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8df1352637ad87cabcb467b34ddfda07}{%
+           family={Löfström},
+           familyi={L\bibinitperiod},
+           given={Jörgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Beijing}%
+      }
+      \list{publisher}{1}{%
+        {World Publ}%
+      }
+      \strng{namehash}{dc7a683630f4e344aac8679919748f28}
+      \strng{fullhash}{dc7a683630f4e344aac8679919748f28}
+      \strng{fullhashraw}{dc7a683630f4e344aac8679919748f28}
+      \strng{bibnamehash}{dc7a683630f4e344aac8679919748f28}
+      \strng{authorbibnamehash}{dc7a683630f4e344aac8679919748f28}
+      \strng{authornamehash}{dc7a683630f4e344aac8679919748f28}
+      \strng{authorfullhash}{dc7a683630f4e344aac8679919748f28}
+      \strng{authorfullhashraw}{dc7a683630f4e344aac8679919748f28}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Repr}
+      \field{isbn}{978-3-540-07875-3 978-7-5062-6011-4 978-0-387-07875-5}
+      \field{langid}{english}
+      \field{number}{223}
+      \field{pagetotal}{207}
+      \field{series}{Die {{Grundlehren}} Der Mathematischen {{Wissenschaften}} in {{Einzeldarstellungen}}}
+      \field{shorttitle}{Interpolation Spaces}
+      \field{title}{Interpolation Spaces: An Introduction}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/lua/Zotero/storage/758RGIN9/Bergh and Löfström - 2003 - Interpolation spaces an introduction.pdf
+      \endverb
+    \endentry
+    \entry{jansonInterpolationMultilinearOperators1988}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=f636aecaf9ea5bf3a641d2c20e59a907}{%
+           family={Janson},
+           familyi={J\bibinitperiod},
+           given={Svante},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=d80925fc4f762988a3f7a8223f8d0abf}{%
+           family={Cwikel},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70049ef238337584135a0b51cf57211b}{%
+           family={Peetre},
+           familyi={P\bibinitperiod},
+           given={Jaak},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0947888588a7b9c27744080f5ab16674}{%
+           family={Sagher},
+           familyi={S\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=004e1e9996e0fd40bbdc4e0435b9fc93}{%
+           family={Wallin},
+           familyi={W\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editora}{2}{}{%
+        {{hash=b31921a1a4cac38cc4d661c5bed3d3cd}{%
+           family={Dold},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=57cebfbb46837a258ccad140cffe5d33}{%
+           family={Eckmann},
+           familyi={E\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{fullhash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{fullhashraw}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{bibnamehash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{authorbibnamehash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{authornamehash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{authorfullhash}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{authorfullhashraw}{f636aecaf9ea5bf3a641d2c20e59a907}
+      \strng{editorbibnamehash}{dddf4a4b4bb580174ff29ff23e92e7ac}
+      \strng{editornamehash}{dddf4a4b4bb580174ff29ff23e92e7ac}
+      \strng{editorfullhash}{cb3fb465756944bdc5ec5b451dd32e08}
+      \strng{editorfullhashraw}{cb3fb465756944bdc5ec5b451dd32e08}
+      \strng{editorabibnamehash}{cdef10b404d6cde996e80380bf0847f8}
+      \strng{editoranamehash}{cdef10b404d6cde996e80380bf0847f8}
+      \strng{editorafullhash}{cdef10b404d6cde996e80380bf0847f8}
+      \strng{editorafullhashraw}{cdef10b404d6cde996e80380bf0847f8}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Function {{Spaces}} and {{Applications}}}
+      \field{editoratype}{redactor}
+      \field{isbn}{978-3-540-18905-3 978-3-540-38841-8}
+      \field{langid}{english}
+      \field{title}{On Interpolation of Multi-Linear Operators}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{1302}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{290\bibrangedash 302}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/BFb0078880
+      \endverb
+      \verb{file}
+      \verb /home/lua/Zotero/storage/6ZYNTP7W/Janson - 1988 - On interpolation of multi-linear operators.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BFb0078880
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BFb0078880
+      \endverb
+    \endentry
+    \entry{lionsClasseDEspacesDInterpolation1964}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8acdd9c6b23c3b223619c0caa46a68c8}{%
+           family={Lions},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi -L.},
+           giveni={J\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod}}}%
+        {{hash=f0a5bd88489fd9d066b938ffa150ce80}{%
+           family={Peetre},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{fullhash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{fullhashraw}{c03af949fe24a192248107eb7ff336fb}
+      \strng{bibnamehash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{authorbibnamehash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{authornamehash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{authorfullhash}{c03af949fe24a192248107eb7ff336fb}
+      \strng{authorfullhashraw}{c03af949fe24a192248107eb7ff336fb}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1618-1913}
+      \field{journaltitle}{Publications Mathématiques de l'Institut des Hautes Études Scientifiques}
+      \field{langid}{french}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Publications Mathématiques de L’Institut des Hautes Scientifiques}
+      \field{title}{Sur Une Classe D’Espaces D’Interpolation}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{19}
+      \field{year}{1964}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5\bibrangedash 68}
+      \range{pages}{64}
+      \verb{doi}
+      \verb 10.1007/BF02684796
+      \endverb
+      \verb{file}
+      \verb /home/lua/Zotero/storage/CUHNH42I/Lions and Peetre - 1964 - Sur Une Classe D’Espaces D’Interpolation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02684796
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02684796
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

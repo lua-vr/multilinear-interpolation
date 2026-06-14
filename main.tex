@@ -1,0 +1,83 @@
+\documentclass[b5paper]{article}
+
+\usepackage{analise}
+\usepackage{teoremas}
+\usepackage{liberdade}
+\usepackage[
+  backref=true
+]{biblatex}
+\usepackage{parskip}
+
+\addbibresource{refs.bib}
+
+\usepackage{xcolor}
+\newcommand\todo[1]{\textcolor{purple}{#1}}
+
+\title{Multilinear Interpolation}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Questions for Thiele}
+\begin{itemize}
+\item how/what kind of multilinear interpolation is used in the multiple ergodic averages
+\item how important are the bad tuples (quasi banach estimates) in practice? do we need them formalized?
+\item how important is it to have the optimal bounds on the weak parameters of the multilinear interpolation? does a weaker bound suffices if it means an easier proof?
+\end{itemize}
+
+
+\section{Introduction}
+These notes offer an overview of two approaches to multilinear interpolation. They are framed in the setting of~\cite[Chapter 2]{berghInterpolationSpacesIntroduction2003}, which provides explanation for the notation and definitions used here and in \cite{jansonInterpolationMultilinearOperators1988}.
+
+% \begin{definition}[Banach couples]
+%   \todo{define}
+% \end{definition}
+
+% \begin{definition}
+%   For \(\overline{A} = (A_0,A_1)\),
+%  \(\Delta(\overline{A}) = A_0 \cap A_1\) and
+%  \(\Sigma(\overline{A}) = A_0 + A_1\).
+% \end{definition}
+
+The argument is split in two cases.
+
+\subsection{Interpolating between two points}
+
+This is the case considered in \cite{jansonInterpolationMultilinearOperators1988}. It also seems to be used as a last step in the convex hull case, to be covered on \cref{sec:interp-inter-conv}. Let \[\overline{A}_1 = (A_0^{(1)},A_1^{(1)}),\dots\;,\overline{A}_n = (A_0^{(n)},A_1^{(n)})\] and \(\overline{B} = (B_0,B_1)\) be Banach couples, and let 
+\[T \colon \Sigma(\overline{A}_1) \times \cdots \times \Sigma(\overline{A}_n) \to \Sigma(\overline{B}),\]
+be a multilinear function that restricts to two multilinear functions 
+\[T \colon {A}_i^{(1)} \times \cdots \times A_i^{(n)} \to B_i\]
+for \(i = 0,1\), such that there are constants \(K_0, K_1\) for which
+\[\norm{T(f_1,\dots,f_n)} \le K_i\norm{f_1} \cdots \norm{f_n}\]
+for \(f_k \in A^{(k)}_i\) for \(1 \le k \le n\), and each \(i = 0,1\).
+
+Given \(\theta \in (0,1)\) and numbers \(q_1,\dots, q_n, q \in [1, \infty]\) satisfying some specified conditions,
+we would be interested in showing that \(T\) also makes sense as a bounded multilinear operator between the intermediate subspaces given by the real interpolation method: 
+\[T \colon (\overline{A}_1)_{\theta,q_1} \times \cdots \times (\overline{A}_n)_{\theta,q_n} \to (\overline{B})_{\theta,q},\]
+with some constant \(K\) depending on \(K_1\) and \(K_2\).
+
+
+
+\begin{example}
+  If our Banach couple \(\overline{A} = (A^{(0)},A^{(1)})\) is given by Lebesgue spaces \(A^{(0)} = L^{p_0,q_0}\), \(A^{(1)} = L^{p_1,q_0}\) and \(p_0 < p_1\), then the real interpolation space corresponds to  the Lebesgue space \(L^{p,q} = (\overline{A})_{\theta,q}\), where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\).
+\end{example}
+
+\subsection{Interpolating on the interior of a convex set}\label{sec:interp-inter-conv}
+
+We assume that the Marcinkiewicz real interpolation theorem for linear operators is available, and we see how it can generalize to the multilinear case.
+
+
+\cite{lionsClasseDEspacesDInterpolation1964}
+
+
+\section{Applications}
+
+\subsection{Usage in the commuting ergodic averages paper}
+
+aa
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,18 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is '.tex-aux/main.blg'
+[67] biber:342> INFO - === Sun Jun 14, 2026, 22:22:23
+[82] Biber.pm:421> INFO - Reading '.tex-aux/main.bcf'
+[146] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
+[158] Biber.pm:4487> INFO - Processing section 0
+[167] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[168] bibtex.pm:1713> INFO - LaTeX decoding ...
+[184] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[268] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[268] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[277] bbl.pm:676> INFO - Writing '.tex-aux/main.bbl' with encoding 'UTF-8'
+[280] bbl.pm:779> INFO - Output to .tex-aux/main.bbl
+[280] Biber.pm:132> WARN - ISBN '978-3-540-07875-3 978-7-5062-6011-4 978-0-387-07875-5' in entry 'berghInterpolationSpacesIntroduction2003' is invalid - run biber with '--validate_datamodel' for details.
+[280] Biber.pm:132> WARN - ISBN '978-3-540-18905-3 978-3-540-38841-8' in entry 'jansonInterpolationMultilinearOperators1988' is invalid - run biber with '--validate_datamodel' for details.
+[280] Biber.pm:134> INFO - WARNINGS: 2

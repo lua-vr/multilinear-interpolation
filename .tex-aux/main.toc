@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Questions for Thiele}{1}{}%
+\contentsline {section}{\numberline {2}Introduction}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Interpolating between two points}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Interpolating on the interior of a convex set}{2}{}%
+\contentsline {section}{\numberline {3}Applications}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Usage in the commuting ergodic averages paper}{3}{}%
