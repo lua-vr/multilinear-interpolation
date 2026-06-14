@@ -1,0 +1,4 @@
+auto
+.tex-aux
+.dir-locals.el
+*.synctex.gz

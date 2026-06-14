@@ -2,7 +2,7 @@ PWD /home/lua/arquivo/2026/phd/multilinear-interpolation
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/lua/arquivo/2026/phd/multilinear-interpolation/main.tex
+INPUT main.tex
 OUTPUT .tex-aux/main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls

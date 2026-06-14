@@ -1,20 +1,19 @@
 # Fdb version 4
-["biber .tex-aux/main"] 1781468542.74521 ".tex-aux/main.bcf" ".tex-aux/main.bbl" ".tex-aux/main" 1781468699.84533 0
-  ".tex-aux/main.bcf" 1781468699.68056 108928 69be7e817f5723c4a25d2160dd2ca6fe "pdflatex"
+["biber .tex-aux/main"] 1781468542.74521 ".tex-aux/main.bcf" ".tex-aux/main.bbl" ".tex-aux/main" 1781469054.66671 0
+  ".tex-aux/main.bcf" 1781469054.50396 108928 69be7e817f5723c4a25d2160dd2ca6fe "pdflatex"
   "refs.bib" 1781466265.1754 11424 5f21d9750f13f29dcc4c1dbb34e0dd65 ""
   (generated)
   ".tex-aux/main.bbl"
   ".tex-aux/main.blg"
   (rewritten before read)
-["pdflatex"] 1781468698.36376 "/home/lua/arquivo/2026/phd/multilinear-interpolation/main.tex" "main.pdf" "main" 1781468699.8459 0
-  ".tex-aux/main.aux" 1781468699.67656 2260 35d55dad862cf57eefd7737ca6851398 "pdflatex"
+["pdflatex"] 1781469053.1304 "main.tex" "main.pdf" "main" 1781469054.66725 0
+  ".tex-aux/main.aux" 1781469054.49996 2260 35d55dad862cf57eefd7737ca6851398 "pdflatex"
   ".tex-aux/main.bbl" 1781468543.64171 8293 020f554d3bf09ec4b67d60668db05665 "biber .tex-aux/main"
-  ".tex-aux/main.run.xml" 1781468699.68393 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
-  ".tex-aux/main.toc" 1781468699.68393 463 05534ffbc4b2d91723d216777c08fbf4 "pdflatex"
+  ".tex-aux/main.run.xml" 1781469054.50652 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  ".tex-aux/main.toc" 1781469054.50652 463 05534ffbc4b2d91723d216777c08fbf4 "pdflatex"
   "/home/lua/.local/share/texmf/tex/latex/meus-pacotes/fontes/liberdade.sty" 1726925153 173 5f0bc65df606e37655a3e4987dbb7779 ""
   "/home/lua/.local/share/texmf/tex/latex/meus-pacotes/macros/analise.sty" 1726956294 271 97b012807b2f8b4ce0a672103f5aee1b ""
   "/home/lua/.local/share/texmf/tex/latex/meus-pacotes/macros/teoremas.sty" 1781462055.53026 1500 0b7d8fba64bbaa01d137a027f5e5a789 ""
-  "/home/lua/arquivo/2026/phd/multilinear-interpolation/main.tex" 1781468693.43761 3459 4d5767dd9c764b194e7a93043e95f5e4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1490131464 2822 11e839d2bbb939844844619b2cff7df6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc" 1490131464 2835 bfce207f80837ef8737b6a788d8bc760 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_n3gv2c.enc" 1490131464 3008 0f186682b22eb791ecc7c5aa63eae0e7 ""
@@ -164,7 +163,7 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1780411107 4754230 fd73faac2c19779d61b8c317c9e61ffa ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780410867 3527884 aa9b1fb0610ba8d2bb2d642631e082d0 ""
-  "main.tex" 1781468693.43761 3459 4d5767dd9c764b194e7a93043e95f5e4 ""
+  "main.tex" 1781468985.16647 3485 0cac84d86e02dd19bb24ecb3c6dc3db3 ""
   (generated)
   ".tex-aux/main.aux"
   ".tex-aux/main.bcf"

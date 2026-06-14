@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.2)  14 JUN 2026 22:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.2)  14 JUN 2026 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/lua/arquivo/2026/phd/multilinear-interpolation/main.tex
-(/home/lua/arquivo/2026/phd/multilinear-interpolation/main.tex
+**main.tex
+(./main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -954,13 +954,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18802 strings out of 467356
- 354292 string characters out of 5418692
+ 18801 strings out of 467356
+ 354135 string characters out of 5418692
  1150170 words of memory out of 6000000
  47625 multiletter control sequences out of 15000+600000
  673446 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,6n,93p,746b,1486s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,6n,93p,693b,1486s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr
@@ -972,7 +972,7 @@ re/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/newtx/txsys.pfb>
-Output written on .tex-aux/main.pdf (3 pages, 319927 bytes).
+Output written on .tex-aux/main.pdf (3 pages, 319950 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
