@@ -25,15 +25,15 @@
 \begin{document}
 \maketitle
 
-In these notes I try to give an overview of some different approaches to multilinear interpolation. They are framed in the setting of~\cite[Chapter 2]{berghInterpolationSpacesIntroduction2003}, which provides explanation for the notation and definitions used here and in \cite{jansonInterpolationMultilinearOperators1988}. This is the first time I have been in contact with these concepts, and all the errors are my responsibility!
+In these notes I try to give an overview of some different approaches to multilinear interpolation. They are framed in the setting of~\cite[Chapter 2]{berghInterpolationSpacesIntroduction2003}, which provides explanation for the notation and definitions used here and in \cite{jansonInterpolationMultilinearOperators1988}. This is the first time I have been in contact with these concepts, and the presence of errors is a nontrivial possibility!
 
 \tableofcontents
 
 \section{Questions for Thiele}
 \begin{itemize}
-\item how/what kind of multilinear interpolation is used in the multiple ergodic averages
+\item how/what kind of multilinear interpolation is used in the multiple ergodic averages (the new result)
 \item how important are the bad tuples (quasi banach estimates) in practice? do we need them formalized?
-\item how important is it to have the optimal bounds on the weak parameters of the multilinear interpolation? does a weaker bound suffices if it means an easier proof?
+\item \todo{phrase this question better} how important is it to have the optimal bounds on the weak parameters of the multilinear interpolation? does a weaker bound suffices if it means an easier proof?
 \end{itemize}
 
 
@@ -53,7 +53,9 @@ We introduce the problem by considering two cases.
 
 \subsection{Interpolating between two points}
 
-This is the case considered in \cite{jansonInterpolationMultilinearOperators1988}. It also seems to be used as a last step in the convex hull case, to be covered on \cref{sec:interp-inter-conv}. A \emph{Banach couple} is a pair \(\overline{A} = (A_0,A_1)\) of Banach spaces that are subspaces of a common Hausdorff topological vector space. In this context, it makes sense to take the intersection \(\Delta(\overline{A}) = A_0 \cap A_1\), which is a Banach space with the norm
+This is the case considered in \cite{jansonInterpolationMultilinearOperators1988}. It also seems to be used as a last step in the convex hull case, to be covered on \cref{sec:interp-inter-conv}.
+
+A \emph{Banach couple} is a pair \(\overline{A} = (A_0,A_1)\) of Banach spaces that are subspaces of a common Hausdorff topological vector space. In this context, it makes sense to take the intersection \(\Delta(\overline{A}) = A_0 \cap A_1\), which is a Banach space with the norm
 \[\norm{a}_{\Delta(\overline{A})} = \max \set{\norm{a}_{A_0}, \norm{a}_{A_1}},\]
 and also their sum \(\Sigma(\overline{A}) = A_0 \cup A_1\), which is also a Banach space when supplied with the norm
 \[\norm{a}_{\Sigma(\overline{A})} = \inf_{a = a_0 + a_1} (\norm{a_0}_{A_0}+ \norm{a_1}_{A_1}).\]
@@ -71,13 +73,14 @@ The picture looks like this:
 
 For the rest of the section, we let \[\overline{A}_1 = (A_0^{(1)},A_1^{(1)}),\dots\;,\overline{A}_n = (A_0^{(n)},A_1^{(n)})\] and \(\overline{B} = (B_0,B_1)\) be Banach couples.
 
+
 \subsubsection{Complex method}
-Our reference \cite{jansonInterpolationMultilinearOperators1988} writes that ``it is well known that the real method of interpolation does not behave as well as the complex method for multi-linear operators''. The shortcoming of the complex method, however, is that it does not give us the Lebesgue space estimates that the real method is able to give. Let's first revise how the multilinear result looks like for the complex method, so we can compare it with the real one.
+Our reference \cite{jansonInterpolationMultilinearOperators1988} writes that ``it is well known that the real method of interpolation does not behave as well as the complex method for multi-linear operators''. The shortcoming of the complex method, however, is that it does not give us the Lorentz space estimates that the real method is able to give. Let's first revise how the multilinear result looks like for the complex method, so we can compare it with the real one.
 
 \begin{theorem}[{\cite[Theorem 4.4.1]{berghInterpolationSpacesIntroduction2003}}]
   Let
   \[T \colon \Delta(\overline{A}_1) \times \cdots \times \Delta(\overline{A}_n) \to \Delta(\overline{B}),\]
-  be a multilinear function, and assume
+  be a multilinear function, and assumet
   \[\norm{T(a_1,\dots,a_n)}_{{B_i}} \le K_i\norm{a_1}_{{A_i^{(1)}}} \cdots \norm{a_n}_{{A_i^{(n)}}}\]
   for \(a_j \in A^{(j)}_i\) and both \(i = 0,1\). Then for all \(0\le \theta \le 1\), \(T\) may be uniquely extended to a multilinear map
   \[T \colon [\overline{A}_1]_{\theta} \times \cdots \times [\overline{A}_n]_{\theta} \to [\overline{B}]_{\theta},\]
@@ -87,29 +90,38 @@ Our reference \cite{jansonInterpolationMultilinearOperators1988} writes that ``i
 This is enough for multilinear interpolation between \(L^p\) spaces:
 
 \begin{note}[{\cite[Section 5.1]{berghInterpolationSpacesIntroduction2003}}]
-  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two \(L_p\) spaces \(A_0 = L_{p_0}\) and \(A_1 = L_{{p_1}}\) with \(1 \le p_0, p_1\), then for \(0 \le \theta \le 1\) the complex interpolation space \([\overline{A}]_{\theta}\) is the Lebesgue space \(L_p\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\).
+  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two \(L_p\) spaces \(A_0 = L_{p_0}\) and \(A_1 = L_{{p_1}}\) with \(1 \le p_0, p_1\), then for \(0 \le \theta \le 1\) the complex interpolation space \([\overline{A}]_{\theta}\) is the Lorentz space \(L_p\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\).
 \end{note}
 
-However, it does not give us Lebesgue space estimates! For that, we have to turn to the next tool.
+However, it does not give us Lorentz space estimates. For that, we have to turn to the next tool.
 
 \subsubsection{Real method(s)}
 The main reason to consider the real method, then, will be the following:
 \begin{note}[{\cite[Theorem 5.3.1]{berghInterpolationSpacesIntroduction2003}}]
-  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two Lebesgue spaces \(A_0 = L_{p_0,q_0}\) and \(A_1 = L_{{p_1,q_1}}\) where \(p_0,p_1,q_0,q_1 \in \interval[open left]{0}{\infty}\), then for \(0 < \theta < 1\) and \(q \in \interval[open left]{0}{\infty}\), the real interpolation space \((\overline{A})_{\theta,q}\) is the Lebesgue space \(L_{p,q}\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\) when \(p_0 \neq p_1\), and the same is true for \(p_0 = p_1\) provided that \(q^{-1} = (1 - \theta) q_0^{-1} + \theta q_1^{-1}\).
+  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two Lorentz spaces \(A_0 = L_{p_0,q_0}\) and \(A_1 = L_{{p_1,q_1}}\) where \(p_0,p_1,q_0,q_1 \in \interval[open left]{0}{\infty}\), then for \(0 < \theta < 1\) and \(q \in \interval[open left]{0}{\infty}\), the real interpolation space \((\overline{A})_{\theta,q}\) is the Lorentz space \(L_{p,q}\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\) when \(p_0 \neq p_1\), and the same is true for \(p_0 = p_1\) provided that \(q^{-1} = (1 - \theta) q_0^{-1} + \theta q_1^{-1}\).
 \end{note}
 
+\begin{note}
+  \(L_{p,p} = L_p\).
+\end{note}
 
-\[T \colon \Sigma(\overline{A}_1) \times \cdots \times \Sigma(\overline{A}_n) \to \Sigma(\overline{B}),\]
-be a multilinear function that restricts to two multilinear functions 
-\[T \colon {A}_i^{(1)} \times \cdots \times A_i^{(n)} \to B_i\]
-for \(i = 0,1\), such that there are constants \(K_0, K_1\) for which
-\[\norm{T(f_1,\dots,f_n)} \le K_i\norm{f_1} \cdots \norm{f_n}\]
-for \(f_k \in A^{(k)}_i\) for \(1 \le k \le n\), and each \(i = 0,1\).
+For the case of the real method, the first result mentioned in \cite{jansonInterpolationMultilinearOperators1988} is the following:
 
-Given \(\theta \in (0,1)\) and numbers \(q_1,\dots, q_n, q \in [1, \infty]\) satisfying some specified conditions,
-we would be interested in showing that \(T\) also makes sense as a bounded multilinear operator between the intermediate subspaces given by the real interpolation method: 
-\[T \colon (\overline{A}_1)_{\theta,q_1} \times \cdots \times (\overline{A}_n)_{\theta,q_n} \to (\overline{B})_{\theta,q},\]
-with some constant \(K\) depending on \(K_1\) and \(K_2\).
+
+
+
+
+% \[T \colon \Sigma(\overline{A}_1) \times \cdots \times \Sigma(\overline{A}_n) \to \Sigma(\overline{B}),\]
+% be a multilinear function that restricts to two multilinear functions 
+% \[T \colon {A}_i^{(1)} \times \cdots \times A_i^{(n)} \to B_i\]
+% for \(i = 0,1\), such that there are constants \(K_0, K_1\) for which
+% \[\norm{T(f_1,\dots,f_n)} \le K_i\norm{f_1} \cdots \norm{f_n}\]
+% for \(f_k \in A^{(k)}_i\) for \(1 \le k \le n\), and each \(i = 0,1\).
+
+% Given \(\theta \in (0,1)\) and numbers \(q_1,\dots, q_n, q \in [1, \infty]\) satisfying some specified conditions,
+% we would be interested in showing that \(T\) also makes sense as a bounded multilinear operator between the intermediate subspaces given by the real interpolation method: 
+% \[T \colon (\overline{A}_1)_{\theta,q_1} \times \cdots \times (\overline{A}_n)_{\theta,q_n} \to (\overline{B})_{\theta,q},\]
+% with some constant \(K\) depending on \(K_1\) and \(K_2\).
 
 \subsection{Interpolating on the interior of a convex set}\label{sec:interp-inter-conv}
 
