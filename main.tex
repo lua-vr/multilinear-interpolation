@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{tikz-cd}
 \usepackage[
+  style=ams-alphabetic,
   backref=true
 ]{biblatex}
 \usepackage{parskip}
@@ -25,17 +26,31 @@
 \begin{document}
 \maketitle
 
+% multilinear
+
 In these notes I try to give an overview of some different approaches to multilinear interpolation. They are framed in the setting of~\cite[Chapter 2]{berghInterpolationSpacesIntroduction2003}, which provides explanation for the notation and definitions used here and in \cite{jansonInterpolationMultilinearOperators1988}. This is the first time I have been in contact with these concepts, and the presence of errors is a nontrivial possibility!
 
 \tableofcontents
 
-\section{Questions for Thiele}
-\begin{itemize}
-\item how/what kind of multilinear interpolation is used in the multiple ergodic averages (the new result)
-\item how important are the bad tuples (quasi banach estimates) in practice? do we need them formalized?
-\item \todo{phrase this question better} how important is it to have the optimal bounds on the weak parameters of the multilinear interpolation? does a weaker bound suffices if it means an easier proof?
-\end{itemize}
+\section{What we want?}
 
+From the meeting discussion (17-06-2026), it seems that we want a version of  interpolation for \(n\)-sublinear functions that starts with \(n + 1\) points \(P_j\), \[P_j = (p_1^{(j)},\dots,p_{n + 1}^{(j)}),\] where in each point the operator has restricted weak type   (corresponding to boundedness as an operator \(T \colon \prod_{k = 1}^n L^{p_k^{(j)},1} \to L^{p_{n + 1}^{(j)},\infty}\)), and concludes that for any point \(P = (p_1,\dots,p_{n + 1})\) in the interior of the convex hull of the \(P_j\), the function is bounded as an operator \(T\colon \prod_{k = 1}^n L^{p_k,p_k} \to L^{p_{n + 1},p_{n + 1}}\). Notice that we think it's sufficient if the conclusion is restricted to Lebesgue spaces \(L^p = L^{p,p}\) here. We also want it to work for cases where some of the \(p\) are in \((0,1)\), corresponding to quasi-Banach spaces.
+
+Taking \cite[Theorem 7.2.2]{grafakosModernFourierAnalysis2014} as the most general statement, we have a limitation
+\begin{equation*}
+  \frac{1}{p_{n + 1}} \le \sum_{k = 1}^n \frac{1}{p_k}.
+\end{equation*}
+More generally, if \(s_{n + 1} ^{-1} \le \sum_{k = 1}^n s_k^{-1}\) (and no restrictions on \(P\) other than it being in the interior of the hull), we can interpolate the function into a bounded operator
+\[T\colon \prod_{k = 1}^n L^{p_k,s_k} \to L^{p_{n + 1},s_{n + 1}}.\]
+
+The question is, is the statement on Grafakos the one that should be formalized? The proof is very long (20 pages) and calculational (involving matrices, many kinds of inequalities), and it is restricted to Lorentz spaces. The proof is also not entirely self-contained, and cites some exercises (pp. 497, 505, 508). \todo{(note (Lua): If AI could do it, I would be very happy, but for humans it looks like that long proof is a pain. It also does not look like the sort of theory-building proofs that we usually have in Mathlib.)}
+
+The abstract linear interpolation theory is a construction that seems well-known and has more than one reference, so in that sense it seems that there are less chances of running into problems or gaps. The argument proceeds by constructing a certain object (the \(K\)-functional) and proving properties about it, so it is more modular and easier to make modifications (see the the discussion about subadditivity below).
+It also provides interpolation between spaces other than Lorentz spaces (and it also includes the quasi-Banach Lorentz cases).
+
+Therefore, it's natural to question how easy it would be to get a multisublinear result as general as Grafakos' starting with the abstract linear theory, or if we could make some concessions in the statement for that goal while still keeping it useful in practice.
+
+First, about having subadditive functions instead of linear functions in the general method, this seems 
 
 \section{Introduction}
 
@@ -80,7 +95,7 @@ Our reference \cite{jansonInterpolationMultilinearOperators1988} writes that ``i
 \begin{theorem}[{\cite[Theorem 4.4.1]{berghInterpolationSpacesIntroduction2003}}]
   Let
   \[T \colon \Delta(\overline{A}_1) \times \cdots \times \Delta(\overline{A}_n) \to \Delta(\overline{B}),\]
-  be a multilinear function, and assumet
+  be a multilinear function, and assume
   \[\norm{T(a_1,\dots,a_n)}_{{B_i}} \le K_i\norm{a_1}_{{A_i^{(1)}}} \cdots \norm{a_n}_{{A_i^{(n)}}}\]
   for \(a_j \in A^{(j)}_i\) and both \(i = 0,1\). Then for all \(0\le \theta \le 1\), \(T\) may be uniquely extended to a multilinear map
   \[T \colon [\overline{A}_1]_{\theta} \times \cdots \times [\overline{A}_n]_{\theta} \to [\overline{B}]_{\theta},\]
@@ -90,7 +105,7 @@ Our reference \cite{jansonInterpolationMultilinearOperators1988} writes that ``i
 This is enough for multilinear interpolation between \(L^p\) spaces:
 
 \begin{note}[{\cite[Section 5.1]{berghInterpolationSpacesIntroduction2003}}]
-  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two \(L_p\) spaces \(A_0 = L_{p_0}\) and \(A_1 = L_{{p_1}}\) with \(1 \le p_0, p_1\), then for \(0 \le \theta \le 1\) the complex interpolation space \([\overline{A}]_{\theta}\) is the Lorentz space \(L_p\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\).
+  If our Banach couple \(\overline{A} = (A_0,A_1)\) is given by two \(L_p\) spaces \(A_0 = L_{p_0}\) and \(A_1 = L_{{p_1}}\) with \(1 \le p_0, p_1\), then for \(0 \le \theta \le 1\) the complex interpolation space \([\overline{A}]_{\theta}\) is the Lebesgue space \(L_p\) where \(p^{-1} = (1 - \theta) p_0^{-1} + \theta p_1^{-1}\).
 \end{note}
 
 However, it does not give us Lorentz space estimates. For that, we have to turn to the next tool.
@@ -131,6 +146,13 @@ We assume that the Marcinkiewicz real interpolation theorem for linear operators
 \cite{lionsClasseDEspacesDInterpolation1964}
 
 
+\section{Questions for Thiele}
+\begin{itemize}
+\item how/what kind of multilinear interpolation is used in the multiple ergodic averages (the new result)
+\item how important are the bad tuples (quasi banach estimates) in practice? do we need them formalized?
+\item \todo{phrase this question better} how important is it to have the optimal bounds on the weak parameters of the multilinear interpolation? does a weaker bound suffices if it means an easier proof?
+\end{itemize}
+
 \section{Applications}
 
 \subsection{Usage in the commuting ergodic averages paper}
@@ -142,4 +164,5 @@ We assume that the Marcinkiewicz real interpolation theorem for linear operators
 
 % Local Variables:
 % abbrev/math-text-lang: en
+% darkroom-width: 100
 % End:
